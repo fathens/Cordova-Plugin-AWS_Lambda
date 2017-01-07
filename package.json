@@ -20,7 +20,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "postinstall": "tsc"
   },
   "author": "f:athens",
   "license": "MIT",
