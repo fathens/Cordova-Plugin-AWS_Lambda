@@ -2,7 +2,7 @@ import _ from "lodash";
 import { Logger } from "log4ts";
 import { aws_request } from "cordova-plugin-aws";
 
-import { LambdaClient, LambdaInvoke } from "./lambda_client";
+import { LambdaClient  } from "./lambda_client";
 import { LambdaWebClient } from "./lambda_web_client";
 
 const logger = new Logger("Lambda");
@@ -21,7 +21,7 @@ export class Lambda implements LambdaClient {
 
     private readonly client: LambdaClient;
 
-    async invoke<T, R>(param: LambdaInvoke<T>): Promise<R> {
-        return this.client.invoke<T, R>(param);
+    async invoke<T, R>(func_name: string, args: T): Promise<R> {
+        return this.client.invoke<T, R>(func_name, args);
     }
 }
