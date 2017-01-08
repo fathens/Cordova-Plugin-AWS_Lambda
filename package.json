@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "postinstall": "tsc"
+    "postinstall": "tsc && _inject_pre"
   },
   "author": "f:athens",
   "license": "MIT",
