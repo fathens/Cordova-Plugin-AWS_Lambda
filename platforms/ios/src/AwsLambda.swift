@@ -14,7 +14,7 @@ class AwsLambda: CDVPlugin {
     func invoke(_ command: CDVInvokedUrlCommand) {
         fork(command) {
             let funcName = self.getString(0)
-            let param = self.getString(1)
+            let param = command.argument(at: 1)
             
             let names = funcName.components(separatedBy: ":")
             let req = AWSLambdaInvokerInvocationRequest()!
