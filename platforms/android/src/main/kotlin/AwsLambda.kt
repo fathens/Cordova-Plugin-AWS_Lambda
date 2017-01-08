@@ -61,12 +61,12 @@ public class AwsLambda : CordovaPlugin() {
 
     fun invoke(args: JSONArray) {
         val funcName = args.getString(0)
-        val payload = args.getString(1)
+        val payload = args.getJSONObject(1)
 
         val names = funcName.split(':')
 
         val req = InvokeRequest().withFunctionName(names[0])
-        req.payload = ByteBuffer.wrap(payload.toByteArray())
+        req.payload = ByteBuffer.wrap(payload.toString().toByteArray())
         if (names.size > 1) req.qualifier = names[1]
 
         val lambda = AWSLambdaClient(credentialProvider)
