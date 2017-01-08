@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-awslambda",
+  "name": "@cordova-plugin/aws-lambda",
   "version": "0.1.0",
   "description": "Cordova Plugin for AWS Lambda",
   "main": "dist/index.js",
