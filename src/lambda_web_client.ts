@@ -1,6 +1,6 @@
 import _ from "lodash";
 import { Logger } from "log4ts";
-import { aws_request } from "cordova-plugin-aws";
+import { aws_request } from "@cordova-plugin/aws-base";
 
 import { LambdaClient } from "./lambda_client";
 
