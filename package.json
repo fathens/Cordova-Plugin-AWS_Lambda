@@ -1,12 +1,12 @@
 {
   "name": "@cordova-plugin/aws-lambda",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Cordova Plugin for AWS Lambda",
   "main": "dist/index.js",
   "typings": "dist/index",
   "dependencies": {
     "@types/lodash": "^4.14.45",
-    "@cordova-plugin/aws-base": "github:fathens/Cordova-Plugin-AWS_Base",
+    "@cordova-plugin/aws-core": "github:fathens/cordova-plugin-aws-core",
     "lodash": "^4.17.3",
     "log4ts": "github:fathens/log4ts"
   },
@@ -21,12 +21,12 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "postinstall": "tsc && _inject_pre"
+    "postinstall": "tsc"
   },
   "author": "f:athens",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fathens/Cordova-Plugin-AWS_Lambda.git"
+    "url": "https://github.com/fathens/cordova-plugin-aws-lambda.git"
   }
 }
