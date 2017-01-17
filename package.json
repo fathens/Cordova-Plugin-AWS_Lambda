@@ -1,6 +1,6 @@
 {
   "name": "@cordova-plugin/aws-lambda",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Cordova Plugin for AWS Lambda",
   "main": "dist/index.js",
   "typings": "dist/index",
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "postinstall": "tsc"
+    "postinstall": "tsc && add_plugin"
   },
   "author": "f:athens",
   "license": "MIT",
