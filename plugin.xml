@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="org.fathens.cordova.plugin.aws.Lambda" version="0.1.0" xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="org.fathens.cordova.plugin.aws.lambda" version="0.1.0" xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>AWS Lambda</name>
     <description>Cordova Plugin for AWS Lambda</description>
     <license>MIT</license>
